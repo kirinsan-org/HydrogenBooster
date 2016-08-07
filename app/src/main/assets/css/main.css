@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.button {
+  -webkit-transition: color 0.1s linear 0s, background-color 0.1s linear 0s;
+          transition: color 0.1s linear 0s, background-color 0.1s linear 0s; }
+  .button:active {
+    background-color: #fff;
+    color: #000; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh; }
+
+body {
+  background: #000;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#sight {
+  border: 3px solid #fff;
+  background-color: #000;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  margin: -125px;
+  z-index: 1;
+  -webkit-transition: all 2s cubic-bezier(0.49, -0.38, 0, 1.73) 0s;
+          transition: all 2s cubic-bezier(0.49, -0.38, 0, 1.73) 0s; }
+  #sight.turnblue {
+    background-color: #8bd3ff; }
+  #sight.dialog {
+    border-radius: 16px;
+    width: 400px;
+    height: 640px;
+    margin: -320px -200px; }
+  #sight.progress {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin: -100px;
+    background-color: #fff; }
+  #sight.intro {
+    border-radius: 16px;
+    width: 600px;
+    height: 200px;
+    margin: -100px -300px; }
+
+#suspend {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  margin: -125px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  text-align: center; }
+
+#processing {
+  color: #000;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  margin: -100px;
+  line-height: 200px;
+  left: 50%;
+  top: 50%;
+  z-index: 50;
+  position: absolute;
+  text-align: center; }
+
+#intro {
+  width: 600px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 3px;
+  margin: -100px -300px;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5;
+  left: 50%;
+  top: 50%; }
+  #intro p {
+    font-size: 11.5px;
+    line-height: 1.4em;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    margin-top: 0.7em;
+    font-weight: normal; }
+    #intro p span {
+      display: inline-block; }
+  #intro .icon {
+    height: 90px; }
+  #intro ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center; }
+    #intro ul li {
+      width: 33.333%;
+      box-sizing: border-box;
+      font-weight: bold;
+      padding: 0 8px; }
+      #intro ul li:nth-child(2) {
+        border: 1px solid #fff;
+        border-width: 0 1px; }
+      #intro ul li img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+
+#finder {
+  width: 400px;
+  height: 640px;
+  box-sizing: border-box;
+  padding: 3px;
+  margin: -320px -200px;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  border-radius: 16px;
+  overflow: hidden; }
+  #finder ul {
+    overflow: scroll; }
+    #finder ul li {
+      border-bottom: 1px solid #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      #finder ul li .photo {
+        box-sizing: border-box;
+        height: 64px;
+        width: 64px;
+        padding: 8px; }
+        #finder ul li .photo img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 100%;
+          background-color: #ccc; }
+      #finder ul li .text {
+        padding: 8px 8px 8px 0;
+        font-size: 18px;
+        font-weight: bold; }
+        #finder ul li .text span {
+          display: block;
+          padding-top: 0.3em; }
+        #finder ul li .text .division {
+          font-size: 12px;
+          font-weight: normal; }
+
+section#finder h1 {
+  background-color: #fff;
+  color: #000;
+  padding: 6px 6px 6px 6px;
+  line-height: 1em;
+  font-size: 16px;
+  text-align: center; }
+
+#aura {
+  z-index: 0;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  margin: -125px; }
+  #aura > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0; }
+  #aura.progress > div {
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: zoomingAura;
+            animation-name: zoomingAura;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    background-color: #fff; }
+  #aura.progress .aura01 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  #aura.progress .aura02 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s; }
+  #aura.suspend > div {
+    background-color: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: zoomingAuraSlow;
+            animation-name: zoomingAuraSlow;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; }
+  #aura.suspend .aura01 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  #aura.suspend .aura02 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+
+@-webkit-keyframes zoomingAura {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  5% {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0.0;
+    filter: alpha(opacity=0); }
+  100% {
+    opacity: 0.0;
+    filter: alpha(opacity=0); } }
+
+@keyframes zoomingAura {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  5% {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0.0;
+    filter: alpha(opacity=0); }
+  100% {
+    opacity: 0.0;
+    filter: alpha(opacity=0); } }
+
+@-webkit-keyframes zoomingAuraSlow {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  10% {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  80% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0.0;
+    filter: alpha(opacity=0); }
+  100% {
+    opacity: 0.0;
+    filter: alpha(opacity=0); } }
+
+@keyframes zoomingAuraSlow {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  10% {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  80% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0.0;
+    filter: alpha(opacity=0); }
+  100% {
+    opacity: 0.0;
+    filter: alpha(opacity=0); } }
