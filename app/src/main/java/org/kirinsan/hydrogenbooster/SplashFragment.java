@@ -21,7 +21,7 @@ public class SplashFragment extends Fragment {
         notifySplashTimeout();
     }
 
-    @UiThread(delay = 1000)
+    @UiThread(delay = 2000)
     void notifySplashTimeout() {
         if (resumed) {
             LocalBroadcastManager.getInstance(getContext())
