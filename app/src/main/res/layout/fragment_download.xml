@@ -18,18 +18,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:gravity="center"
-        android:text="より効率的に水素水を作るために、水素をダウンロードすることをおすすめします。"/>
+        android:text="@string/download_description"/>
 
     <Button
         android:id="@+id/download"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ダウンロードする"/>
+        android:text="@string/button_download"/>
 
     <Button
         android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ダウンロードしない"/>
+        android:text="@string/button_not_now"/>
 
 </LinearLayout>

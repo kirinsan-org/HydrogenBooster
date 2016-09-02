@@ -21,8 +21,8 @@ public class DownloadFragment extends Fragment {
     @Click
     void download() {
         dialog = new MaterialDialog.Builder(getContext())
-                .title("Downloading")
-                .content("Downloading hydrogen...")
+                .title(R.string.downloading)
+                .content(R.string.downloading_hydrogen)
                 .progress(false, 602214085, true)
                 .canceledOnTouchOutside(false)
                 .build();
