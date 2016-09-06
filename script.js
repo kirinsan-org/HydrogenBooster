@@ -12,3 +12,11 @@ var timerId = setInterval(function () {
     i * 5, i * 2
   ]);
 }, i * 17);
+
+window.addEventListener('click', function () {
+  if (document.body.requestFullscreen) {
+    document.body.requestFullscreen();
+  } else if (document.body.webkitRequestFullScreen) {
+    document.body.webkitRequestFullScreen();
+  }
+});
