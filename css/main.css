@@ -332,3 +332,24 @@ section#finder h1 {
   100% {
     opacity: 0.0;
     filter: alpha(opacity=0); } }
+
+
+#make-a-money {
+  position:fixed;
+  bottom:0;left:0;
+  width:100%;
+}
+
+#links {
+    display:block;
+    width:100%;
+    text-align:center;
+    
+  }
+li {
+      display:inline-block;
+      width:190px;
+      max-width:45%;
+      
+    }
+    img{max-width:100%;margin:0 1px;display:block;border:1px solid #000}
